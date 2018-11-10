@@ -1196,6 +1196,7 @@ inline void get_serial_commands() {
             sd_count = 0; // If a sub-file was printing, continue from call point
           else {
             SERIAL_PROTOCOLLNPGM(MSG_FILE_PRINTED);
+            enqueue_and_echo_commands_P(PSTR("G90\nG1 X0 Y194 F1000\nG1 Z193")); //TODO: Put instead machine MAX settings.
             #if ENABLED(PRINTER_EVENT_LEDS)
               LCD_MESSAGEPGM(MSG_INFO_COMPLETED_PRINTS);
               leds.set_green();
