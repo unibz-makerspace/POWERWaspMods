@@ -380,10 +380,15 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
+  // PowerWASP (2nd gen. printhead)
+  #define DEFAULT_Kp 27.56
+  #define DEFAULT_Ki 5.34
+  #define DEFAULT_Kd 35.56
+
   // Ultimaker
-  #define DEFAULT_Kp 22.2
-  #define DEFAULT_Ki 1.08
-  #define DEFAULT_Kd 114
+  //#define DEFAULT_Kp 22.2
+  //#define DEFAULT_Ki 1.08
+  //#define DEFAULT_Kd 114
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -881,7 +886,7 @@
 
 // The size of the print bed
 #define X_BED_SIZE 261
-#define Y_BED_SIZE 293
+#define Y_BED_SIZE 193
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
