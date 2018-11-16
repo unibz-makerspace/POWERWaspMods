@@ -20,3 +20,15 @@ See also:
 
 ### KNOWN BUGS:
  - Arduino 1.8.7 has a serious bug where the internal Java runtime locks up and stresses at least one CPU core at 100%. Use instead a hourly build that has an updated Java runtime.
+
+## Hardware
+The original PowerWASP board has available a internal Serial Port connection with Arduino Serial3. The connections are as follows:7
+```
+.------------.---------------------.
+|            |  Serial3            |
+|            |  [O] 5V             | Front
+|    FAN     |  [O] GND            | panel
+|            |  [O] TX             | side
+|            |  [O] RX             |
+`------------´---------------------´
+```
